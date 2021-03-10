@@ -1,0 +1,80 @@
+/* General stylng */
+body{
+	background-color: #0968B1;
+	/*background:linear-gradient(0deg, #0968B1CC, #0968B1CC), url(../img/background-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;*/
+}
+
+/* Logo styling */
+.login h1 a{
+	background-image: url(../img/logo-white.svg);
+	background-size: 100% auto;
+	width: 280px;
+}
+
+.login h1 a:focus{
+	box-shadow: none;
+}
+
+.login #backtoblog a, .login #nav a{
+	color: #FFFFFF;
+}
+
+.login #backtoblog a:hover, .login #nav a:hover{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.login form{
+	border-radius: 4px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* Input fields styling */
+
+.login form .input{
+	background: #FFFFFF;
+	border: none;
+	border-bottom: 2px solid #253871;
+	border-radius: 0px;
+	opacity: 0.5;
+	transition: 0.2s;
+	position: relative;
+}
+
+.login form input:after{
+	content: "";
+	display: inline-block;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	background: #253871;
+	color: #253871;
+	z-index: 20;
+}
+
+.login form .input:focus{
+	box-shadow: none;
+	outline: none;
+	opacity: 1;
+}
+
+/* Styling button */
+
+p.submit .button.button.button-primary.button-large{
+	background: #0968B1;
+	border: none;
+	padding: 3px 30px;
+	transition: 0.3s;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+p.submit .button.button.button-primary.button-large:hover{
+	background: #253871;
+}
